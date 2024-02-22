@@ -396,3 +396,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+RankingImagesWebApp/webapi/Images/Icons/
+RankingImagesWebApp/webapi/Images/Rankings/

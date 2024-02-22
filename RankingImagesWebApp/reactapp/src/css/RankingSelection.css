@@ -1,0 +1,67 @@
+
+.ranking-selection-btn {
+	font-family: Arial;
+	color: var(--ranking-selection-btn-text-color);
+	font-size: 20px;
+	padding: 10px 20px 10px 20px;
+	border: none;
+	border-bottom: solid #000000 1px;
+	text-decoration: none;
+	background-color: transparent;
+	width: 100%;
+}
+
+.ranking-selection-btn.active {
+	background-color: var(--ranking-selection-btn-bg-active-color);
+	color: var(--ranking-selection-btn-text-active-color);
+}
+
+.ranking-selection-btn:hover {
+	background-color: var(--ranking-selection-btn-bg-hover-color);
+	color: var(--ranking-selection-btn-text-hover-color);
+	text-decoration: none;
+}
+
+.ranking-selection-btn-wrapper, .ranking-selection-btn-wrapper button {
+	width: 100%;
+}
+
+.ranking-selection {
+	left: 0px;
+	position: fixed;
+	top: 67px;
+	bottom: 67px;
+	display: flex;
+	flex-direction: row;
+}
+
+.ranking-selection-collapse-btn {
+	height: 51px;
+	border-bottom-right-radius: 5px;
+	font-family: Arial;
+	color: var(--ranking-selection-btn-text-color);
+	font-size: 20px;
+	padding: 10px 20px 10px 20px;
+	border-top: solid #000000 0px;
+	border-bottom: solid #000000 1px;
+	border-right: solid #000000 1px;
+	border-left: solid #000000 0px;
+	text-decoration: none;
+	background-color: var(--ranking-selection-bg-color);
+}
+
+.ranking-selection-collapse-btn:hover {
+	background-color: var(--ranking-selection-btn-bg-hover-color);
+	color: var(--ranking-selection-btn-text-hover-color);
+	text-decoration: none;
+}
+
+.ranking-selection-list {
+	width: 160px;
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto;
+	background-color: var(--ranking-selection-bg-color);
+	height: 100%;
+	box-shadow: 13px 0px 87px -26px rgba(0,0,0,0.87);
+}

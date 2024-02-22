@@ -1,0 +1,39 @@
+
+
+body {
+	background-color: var(--body-bg-color);
+	color: var(--txt-color);
+}
+
+.modal-content {
+	background-color: var(--modal-bg-color);
+	color: var(--modal-text-color);
+}
+
+.modal-header {
+	border-bottom-color: var(--modal-border-color);
+	background-color: var(--modal-header-bg-color);
+	color: var(--modal-header-text-color);
+}
+
+.modal-footer {
+	border-top-color: var(--modal-border-color);
+}
+
+.modal-footer .btn-primary {
+	background-color: var(--modal-primary-btn-bg-color);
+	border-color: var(--modal-primary-btn-border-color);
+	color: var(--modal-primary-btn-text-color);
+}
+
+.modal-footer .btn-secondary {
+	background-color: var(--modal-secondary-btn-bg-color);
+	border-color: var(--modal-secondary-btn-border-color);
+	color: var(--modal-secondary-btn-text-color);
+}
+
+/* For some reason, Bootstrap's modal will add padding-right to the body and changes the overflow when opened */
+.modal-open {
+	padding-right: 0px !important;
+	overflow: auto !important;
+}

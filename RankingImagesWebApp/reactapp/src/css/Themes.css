@@ -1,0 +1,423 @@
+
+:root {
+	--navbar-bg-color: white;
+	--navbar-text-color: black;
+	--navbar-text-hover-color: grey;
+	--navbar-toggle-color: rgba(0, 0, 0, 0.65);
+	--body-bg-color: white;
+	--txt-color: black;
+	--footer-border-color: grey;
+
+	--theme-dropdown-text-color: black;
+	--theme-dropdown-bg-color: #f3f3f3;
+	--theme-dropdown-bg-hover-color: #d1d1d1;
+	--theme-dropdown-border-color: #6c757d;
+	--theme-dropdown-border-hover-color: #565e64;
+
+	--user-dropdown-temp-bg-color: #f3f3f3;
+	--user-dropdown-temp-text-color: black;
+	--user-dropdown-temp-icon-color: white;
+	--user-dropdown-temp-icon-border-color: black;
+
+	--ranking-selection-bg-color: white;
+	--ranking-selection-btn-text-color: black;
+	--ranking-selection-btn-bg-hover-color: #e5e5e5;
+	--ranking-selection-btn-text-hover-color: black;
+	--ranking-selection-btn-bg-active-color: #c3c3c3;
+	--ranking-selection-btn-text-active-color: black;
+
+	--modal-bg-color: #fdfdfd;
+	--modal-text-color: black;
+	--modal-header-bg-color: #f5f5f5;
+	--modal-header-text-color: black;
+	--modal-border-color: black;
+	--modal-primary-btn-bg-color: #cfcfcf;
+	--modal-primary-btn-text-color: black;
+	--modal-primary-btn-border-color: black;
+	--modal-secondary-btn-bg-color: #f3f3f3;
+	--modal-secondary-btn-text-color: black;
+	--modal-secondary-btn-border-color: black;
+
+	--ranking-title-edit-icon-color: grey;
+	--ranking-title-edit-hover-icon-color: black;
+	--ranking-delete-icon-filter: invert(54%) sepia(0%) saturate(1228%) hue-rotate(206deg) brightness(93%) contrast(86%);
+	--ranking-delete-icon-hover-filter: invert(0%) sepia(95%) saturate(0%) hue-rotate(137deg) brightness(97%) contrast(104%);
+
+	--nav-mobile-img: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+[data-theme="dark"] {
+	--navbar-bg-color: #1c1c1c;
+	--navbar-text-color: white;
+	--navbar-text-hover-color: grey;
+	--navbar-toggle-color: rgba(255, 255, 255, 0.65);
+	--body-bg-color: #424242;
+	--txt-color: white;
+	--footer-border-color: black;
+
+	--theme-dropdown-text-color: white;
+	--theme-dropdown-bg-color: #353535;
+	--theme-dropdown-bg-hover-color: #5c636a;
+	--theme-dropdown-border-color: #6c757d;
+	--theme-dropdown-border-hover-color: #565e64;
+
+	--user-dropdown-temp-bg-color: #353535;
+	--user-dropdown-temp-text-color: white;
+	--user-dropdown-temp-icon-color: black;
+	--user-dropdown-temp-icon-border-color: white;
+
+	--ranking-selection-bg-color: #292929;
+	--ranking-selection-btn-text-color: white;
+	--ranking-selection-btn-bg-hover-color: #5b5b5b;
+	--ranking-selection-btn-text-hover-color: white;
+	--ranking-selection-btn-bg-active-color: #101010;
+	--ranking-selection-btn-text-active-color: white;
+
+	--modal-bg-color: #434343;
+	--modal-text-color: white;
+	--modal-header-bg-color: #181818;
+	--modal-header-text-color: white;
+	--modal-border-color: black;
+	--modal-primary-btn-bg-color: #272727;
+	--modal-primary-btn-text-color: white;
+	--modal-primary-btn-border-color: black;
+	--modal-secondary-btn-bg-color: #6b6b6b;
+	--modal-secondary-btn-text-color: white;
+	--modal-secondary-btn-border-color: black;
+
+	--ranking-title-edit-icon-color: black;
+	--ranking-title-edit-hover-icon-color: grey;
+	--ranking-delete-icon-filter: invert(0%) sepia(95%) saturate(0%) hue-rotate(137deg) brightness(97%) contrast(104%);
+	--ranking-delete-hover-icon-filter: invert(54%) sepia(0%) saturate(1228%) hue-rotate(206deg) brightness(93%) contrast(86%);
+
+	--nav-mobile-img: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+[data-theme="pink"] {
+	--navbar-bg-color: #ffabd0;
+	--navbar-text-color: black;
+	--navbar-text-hover-color: grey;
+	--navbar-toggle-color: rgba(0, 0, 0, 0.65);
+	--body-bg-color: #ffdbea;
+	--txt-color: black;
+	--footer-border-color: black;
+
+	--theme-dropdown-text-color: black;
+	--theme-dropdown-bg-color: #ffc5d8;
+	--theme-dropdown-bg-hover-color: #ff99c8;
+	--theme-dropdown-border-color: #565e64;
+	--theme-dropdown-border-hover-color: #565e64;
+
+	--user-dropdown-temp-bg-color: #ffc5d8;
+	--user-dropdown-temp-text-color: black;
+	--user-dropdown-temp-icon-color: #ffdbea;
+	--user-dropdown-temp-icon-border-color: black;
+
+	--ranking-selection-bg-color: #ffc3d9;
+	--ranking-selection-btn-text-color: black;
+	--ranking-selection-btn-bg-hover-color: #f5a0c3;
+	--ranking-selection-btn-text-hover-color: black;
+	--ranking-selection-btn-bg-active-color: #ff9fd9;
+	--ranking-selection-btn-text-active-color: black;
+
+	--modal-bg-color: #ffe4f0;
+	--modal-text-color: black;
+	--modal-header-bg-color: #ff9dd4;
+	--modal-header-text-color: black;
+	--modal-border-color: black;
+	--modal-primary-btn-bg-color: #ff9dd4;
+	--modal-primary-btn-text-color: black;
+	--modal-primary-btn-border-color: black;
+	--modal-secondary-btn-bg-color: #f3f3f3;
+	--modal-secondary-btn-text-color: black;
+	--modal-secondary-btn-border-color: black;
+	
+	--ranking-title-edit-icon-color: black;
+	--ranking-title-edit-hover-icon-color: grey;
+	--ranking-delete-icon-filter: invert(0%) sepia(95%) saturate(0%) hue-rotate(137deg) brightness(97%) contrast(104%);
+	--ranking-delete-hover-icon-filter: invert(54%) sepia(0%) saturate(1228%) hue-rotate(206deg) brightness(93%) contrast(86%);
+
+	--nav-mobile-img: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+[data-theme="light-blue"] {
+	--navbar-bg-color: #b8daf3;
+	--navbar-text-color: black;
+	--navbar-text-hover-color: grey;
+	--navbar-toggle-color: rgba(0, 0, 0, 0.65);
+	--body-bg-color: #e1f0fa;
+	--txt-color: black;
+	--footer-border-color: black;
+
+	--theme-dropdown-text-color: black;
+	--theme-dropdown-bg-color: #cee6f7;
+	--theme-dropdown-bg-hover-color: #a8d2f0;
+	--theme-dropdown-border-color: #1b689f;
+	--theme-dropdown-border-hover-color: #1b689f;
+
+	--user-dropdown-temp-bg-color: #cee6f7;
+	--user-dropdown-temp-text-color: black;
+	--user-dropdown-temp-icon-color: #e1f0fa;
+	--user-dropdown-temp-icon-border-color: black;
+
+	--ranking-selection-bg-color: #cce4f6;
+	--ranking-selection-btn-text-color: black;
+	--ranking-selection-btn-bg-hover-color: #a5d1f0;
+	--ranking-selection-btn-text-hover-color: black;
+	--ranking-selection-btn-bg-active-color: #85c7f7;
+	--ranking-selection-btn-text-active-color: black;
+
+	--modal-bg-color: #dfefef;
+	--modal-text-color: black;
+	--modal-header-bg-color: #aed8e7;
+	--modal-header-text-color: black;
+	--modal-border-color: black;
+	--modal-primary-btn-bg-color: #8dc5df;
+	--modal-primary-btn-text-color: black;
+	--modal-primary-btn-border-color: black;
+	--modal-secondary-btn-bg-color: #c3ebff;
+	--modal-secondary-btn-text-color: black;
+	--modal-secondary-btn-border-color: black;
+
+	--ranking-title-edit-icon-color: grey;
+	--ranking-title-edit-hover-icon-color: black;
+	--ranking-delete-icon-filter: invert(54%) sepia(0%) saturate(1228%) hue-rotate(206deg) brightness(93%) contrast(86%);
+	--ranking-delete-icon-hover-filter: invert(0%) sepia(95%) saturate(0%) hue-rotate(137deg) brightness(97%) contrast(104%);
+
+	--nav-mobile-img: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+[data-theme="blue"] {
+	--navbar-bg-color: #0a499d;
+	--navbar-text-color: white;
+	--navbar-text-hover-color: grey;
+	--navbar-toggle-color: rgba(0, 0, 0, 0.65);
+	--body-bg-color: #247fbb;
+	--txt-color: white;
+	--footer-border-color: white;
+
+	--theme-dropdown-text-color: white;
+	--theme-dropdown-bg-color: #2572c3;
+	--theme-dropdown-bg-hover-color: #0f68a7;
+	--theme-dropdown-border-color: #1b689f;
+	--theme-dropdown-border-hover-color: #1b689f;
+
+	--user-dropdown-temp-bg-color: #2572c3;
+	--user-dropdown-temp-text-color: white;
+	--user-dropdown-temp-icon-color: #247fbb;
+	--user-dropdown-temp-icon-border-color: white;
+
+	--ranking-selection-bg-color: #005ba1;
+	--ranking-selection-btn-text-color: white;
+	--ranking-selection-btn-bg-hover-color: #2271a9;
+	--ranking-selection-btn-text-hover-color: white;
+	--ranking-selection-btn-bg-active-color: #0a4a79;
+	--ranking-selection-btn-text-active-color: white;
+
+	--modal-bg-color: #236a91;
+	--modal-text-color: white;
+	--modal-header-bg-color: #08226b;
+	--modal-header-text-color: white;
+	--modal-border-color: white;
+	--modal-primary-btn-bg-color: #182165;
+	--modal-primary-btn-text-color: white;
+	--modal-primary-btn-border-color: black;
+	--modal-secondary-btn-bg-color: #3f60a9;
+	--modal-secondary-btn-text-color: white;
+	--modal-secondary-btn-border-color: black;
+	
+	--ranking-title-edit-icon-color: black;
+	--ranking-title-edit-hover-icon-color: grey;
+	--ranking-delete-icon-filter: invert(0%) sepia(95%) saturate(0%) hue-rotate(137deg) brightness(97%) contrast(104%);
+	--ranking-delete-hover-icon-filter: invert(54%) sepia(0%) saturate(1228%) hue-rotate(206deg) brightness(93%) contrast(86%);
+
+	--nav-mobile-img: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+[data-theme="orange"] {
+	--navbar-bg-color: #e56514;
+	--navbar-text-color: white;
+	--navbar-text-hover-color: grey;
+	--navbar-toggle-color: rgba(0, 0, 0, 0.65);
+	--body-bg-color: #e58747;
+	--txt-color: white;
+	--footer-border-color: white;
+
+	--theme-dropdown-text-color: white;
+	--theme-dropdown-bg-color: #e9823b;
+	--theme-dropdown-bg-hover-color: #d77119;
+	--theme-dropdown-border-color: #9f511b;
+	--theme-dropdown-border-hover-color: #9f511b;
+
+	--user-dropdown-temp-bg-color: #e9823b;
+	--user-dropdown-temp-text-color: white;
+	--user-dropdown-temp-icon-color: #e58747;
+	--user-dropdown-temp-icon-border-color: white;
+
+	--ranking-selection-bg-color: #e57326;
+	--ranking-selection-btn-text-color: white;
+	--ranking-selection-btn-bg-hover-color: #cf5b0d;
+	--ranking-selection-btn-text-hover-color: white;
+	--ranking-selection-btn-bg-active-color: #b74c00;
+	--ranking-selection-btn-text-active-color: white;
+
+	--modal-bg-color: #fba45d;
+	--modal-text-color: white;
+	--modal-header-bg-color: #cf5813;
+	--modal-header-text-color: white;
+	--modal-border-color: white;
+	--modal-primary-btn-bg-color: #d5600d;
+	--modal-primary-btn-text-color: white;
+	--modal-primary-btn-border-color: white;
+	--modal-secondary-btn-bg-color: #ff8c2a;
+	--modal-secondary-btn-text-color: white;
+	--modal-secondary-btn-border-color: white;
+	
+	--ranking-title-edit-icon-color: black;
+	--ranking-title-edit-hover-icon-color: grey;
+	--ranking-delete-icon-filter: invert(0%) sepia(95%) saturate(0%) hue-rotate(137deg) brightness(97%) contrast(104%);
+	--ranking-delete-hover-icon-filter: invert(54%) sepia(0%) saturate(1228%) hue-rotate(206deg) brightness(93%) contrast(86%);
+
+	--nav-mobile-img: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+[data-theme="red"] {
+	--navbar-bg-color: #8e1818;
+	--navbar-text-color: white;
+	--navbar-text-hover-color: grey;
+	--navbar-toggle-color: rgba(0, 0, 0, 0.65);
+	--body-bg-color: #be2020;
+	--txt-color: white;
+	--footer-border-color: white;
+
+	--theme-dropdown-text-color: white;
+	--theme-dropdown-bg-color: #c72222;
+	--theme-dropdown-bg-hover-color: #9c1b1b;
+	--theme-dropdown-border-color: #9f1b1b;
+	--theme-dropdown-border-hover-color: #9f1b1b;
+
+	--user-dropdown-temp-bg-color: #c72222;
+	--user-dropdown-temp-text-color: white;
+	--user-dropdown-temp-icon-color: #8e1818;
+	--user-dropdown-temp-icon-border-color: white;
+
+	--ranking-selection-bg-color: #df3636;
+	--ranking-selection-btn-text-color: white;
+	--ranking-selection-btn-bg-hover-color: #bf1919;
+	--ranking-selection-btn-text-hover-color: white;
+	--ranking-selection-btn-bg-active-color: #931717;
+	--ranking-selection-btn-text-active-color: white;
+
+	--modal-bg-color: #db4545;
+	--modal-text-color: white;
+	--modal-header-bg-color: #8d1111;
+	--modal-header-text-color: white;
+	--modal-border-color: white;
+	--modal-primary-btn-bg-color: #a72828;
+	--modal-primary-btn-text-color: white;
+	--modal-primary-btn-border-color: black;
+	--modal-secondary-btn-bg-color: #e95d5d;
+	--modal-secondary-btn-text-color: white;
+	--modal-secondary-btn-border-color: black;
+	
+	--ranking-title-edit-icon-color: black;
+	--ranking-title-edit-hover-icon-color: grey;
+	--ranking-delete-icon-filter: invert(0%) sepia(95%) saturate(0%) hue-rotate(137deg) brightness(97%) contrast(104%);
+	--ranking-delete-hover-icon-filter: invert(54%) sepia(0%) saturate(1228%) hue-rotate(206deg) brightness(93%) contrast(86%);
+
+	--nav-mobile-img: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+[data-theme="green"] {
+	--navbar-bg-color: #188e43;
+	--navbar-text-color: white;
+	--navbar-text-hover-color: grey;
+	--navbar-toggle-color: rgba(0, 0, 0, 0.65);
+	--body-bg-color: #20be5a;
+	--txt-color: white;
+	--footer-border-color: white;
+
+	--theme-dropdown-text-color: white;
+	--theme-dropdown-bg-color: #2ea75a;
+	--theme-dropdown-bg-hover-color: #1b9c4a;
+	--theme-dropdown-border-color: #1b9f4b;
+	--theme-dropdown-border-hover-color: #1b9f4b;
+
+	--user-dropdown-temp-bg-color: #2ea75a;
+	--user-dropdown-temp-text-color: white;
+	--user-dropdown-temp-icon-color: #20be5a;
+	--user-dropdown-temp-icon-border-color: white;
+
+	--ranking-selection-bg-color: #08ab44;
+	--ranking-selection-btn-text-color: white;
+	--ranking-selection-btn-bg-hover-color: #169b47;
+	--ranking-selection-btn-text-hover-color: white;
+	--ranking-selection-btn-bg-active-color: #197d3e;
+	--ranking-selection-btn-text-active-color: white;
+
+	--modal-bg-color: #23912f;
+	--modal-text-color: white;
+	--modal-header-bg-color: #0d633b;
+	--modal-header-text-color: white;
+	--modal-border-color: white;
+	--modal-primary-btn-bg-color: #186530;
+	--modal-primary-btn-text-color: white;
+	--modal-primary-btn-border-color: black;
+	--modal-secondary-btn-bg-color: #2e8f4c;
+	--modal-secondary-btn-text-color: white;
+	--modal-secondary-btn-border-color: black;
+	
+	--ranking-title-edit-icon-color: black;
+	--ranking-title-edit-hover-icon-color: grey;
+	--ranking-delete-icon-filter: invert(0%) sepia(95%) saturate(0%) hue-rotate(137deg) brightness(97%) contrast(104%);
+	--ranking-delete-hover-icon-filter: invert(54%) sepia(0%) saturate(1228%) hue-rotate(206deg) brightness(93%) contrast(86%);
+
+	--nav-mobile-img: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+[data-theme="purple"] {
+	--navbar-bg-color: #6e0c8b;
+	--navbar-text-color: white;
+	--navbar-text-hover-color: grey;
+	--navbar-toggle-color: rgba(0, 0, 0, 0.65);
+	--body-bg-color: #a616d3;
+	--txt-color: white;
+	--footer-border-color: white;
+
+	--theme-dropdown-text-color: white;
+	--theme-dropdown-bg-color: #8a2ea7;
+	--theme-dropdown-bg-hover-color: #761b9c;
+	--theme-dropdown-border-color: #530c7f;
+	--theme-dropdown-border-hover-color: #530c7f;
+
+	--user-dropdown-temp-bg-color: #8a2ea7;
+	--user-dropdown-temp-text-color: white;
+	--user-dropdown-temp-icon-color: #a616d3;
+	--user-dropdown-temp-icon-border-color: white;
+
+	--ranking-selection-bg-color: #8d20c5;
+	--ranking-selection-btn-text-color: white;
+	--ranking-selection-btn-bg-hover-color: #6e169b;
+	--ranking-selection-btn-text-hover-color: white;
+	--ranking-selection-btn-bg-active-color: #5b197d;
+	--ranking-selection-btn-text-active-color: white;
+
+	--modal-bg-color: #8a55a7;
+	--modal-text-color: white;
+	--modal-header-bg-color: #4a146d;
+	--modal-header-text-color: white;
+	--modal-border-color: white;
+	--modal-primary-btn-bg-color: #521497;
+	--modal-primary-btn-text-color: white;
+	--modal-primary-btn-border-color: white;
+	--modal-secondary-btn-bg-color: #8324cb;
+	--modal-secondary-btn-text-color: white;
+	--modal-secondary-btn-border-color: white;
+	
+	--ranking-title-edit-icon-color: black;
+	--ranking-title-edit-hover-icon-color: grey;
+	--ranking-delete-icon-filter: invert(0%) sepia(95%) saturate(0%) hue-rotate(137deg) brightness(97%) contrast(104%);
+	--ranking-delete-hover-icon-filter: invert(54%) sepia(0%) saturate(1228%) hue-rotate(206deg) brightness(93%) contrast(86%);
+
+	--nav-mobile-img: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
